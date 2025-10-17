@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url('AimAzon.jpg');
+	no-repeat center center/cover;
+    color: #222;
+	font-size:24px;
+	
+	
+}
+img{
+	width:300px;
+	height: 90spx;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #0a1a3f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid #fff;
+}
+
+/* HERO SECTION */
+.about-hero {
+    text-align: center;
+    background-color:#0a1a3f ;
+    color: white;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    margin: 2rem;
+}
+
+/* CONTENT */
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+	text-align:center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+	
+}
+
+.box {
+    background-color: rgba(83,104,114,1);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    background-color: white;
+    color: black;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* TEAM CAROUSEL */
+.team-section {
+    margin-top: 2rem;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1.5rem;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.member {
+    flex: 0 0 220px;
+    text-align: center;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgba(83,104,114,1);
+    margin-bottom: 10px;
+}
+
+.member:hover {
+    background-color: rgba(83,104,114,1);
+    color: black;
+    transform: scale(1.05);
+}
+
+/* CAROUSEL BUTTONS */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0a1a3f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: yellow;
+    color: black;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0a1a3f;
+    color: white;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: 2rem;
+}
+
+/* Centered Privacy Links */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+	size:50px;
+}
+
+.footer-links a:hover {
+    color: yellow;
+}
+
+/* Centered and Narrow Disclaimer */
+.disclaimer {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    padding: 0.8rem 1rem;
+    border-top: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+    width: 70%;              /* 🔹 Cut width to 70% */
+    margin: 0 auto 1rem auto; /* 🔹 Center horizontally */
+}
